@@ -13,7 +13,5 @@ def gaslevelguage():
 
 # Function will call the gaslevelguage to determine gas level and then find a close gas station if low
 def gaslevelalert():
-    mlsToGasStation = round(random.uniform(1, 25), 1)
-    print(mlsToGasStation)
-
-gaslevelalert()
+    mlsToGasStationLow = round(random.uniform(1, 25), 1)
+    mlsToGasStationQtr = round(random.uniform(25.1, 50), 1)
