@@ -5,7 +5,15 @@ print("Gasoline Branch\n\n")
 import random
 from time import sleep
 
+# Function that lists gas stations, randomly choosing one, anf Returning it's value
 def gaslevelguage():
     gasLevelList = ["EMPTY","LOW","QUARTER TANK","HALF TANK","THREE-SLAYING-QUARTER TANK","FULL TANK"]
     currentGasLevel = random.choice(gasLevelList)
     return currentGasLevel
+
+# Function will call the gaslevelguage to determine gas level and then find a close gas station if low
+def gaslevelalert():
+    mlsToGasStation = round(random.uniform(1, 25), 1)
+    print(mlsToGasStation)
+
+gaslevelalert()
