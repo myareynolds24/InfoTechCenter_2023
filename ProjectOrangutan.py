@@ -11,6 +11,12 @@ def gaslevelguage():
     currentGasLevel = random.choice(gasLevelList)
     return currentGasLevel
 
+# Function with a list of gas stations
+def listofgasstations():
+    gasStations = ["Shell","Speedway","Exxon","Meijer","Costco","Marathon","BP","Circle K","Wesco"]
+    gasSationsNear = random.choice(gasStations)
+    return gasSationsNear
+
 # Function will call the gaslevelguage to determine gas level and then find a close gas station if low
 def gaslevelalert():
     mlsToGasStationLow = round(random.uniform(1, 25), 1)
