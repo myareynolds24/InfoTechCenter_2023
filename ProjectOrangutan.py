@@ -4,6 +4,8 @@ Our Welcome Screen will start our program letting drivers know that the InfoTech
 #Import Libraries Here
 import sys
 import time
+import random
+from time import sleep
 
 timetosleep = 2
 
@@ -26,12 +28,8 @@ while x != 20:
           print("\n\nOperating System Loaded" + "\nRetina Scanned, Access Granted!")
 
 print("*************************************************************************")
-print("Gasoline Branch\n\n")
-
-# import libraries here
-import random
-from time import sleep
-
+print("Checking Current Gas Levels\n")
+sleep(1)
 # Function that lists gas stations, randomly choosing one, anf Returning it's value
 def gasLevelGuage():
     gasLevelList = ["EMPTY","LOW","QUARTER TANK","HALF TANK","THREE-SLAYING-QUARTERS TANK","FULL TANK"]
